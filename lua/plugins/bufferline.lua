@@ -6,7 +6,7 @@ return {
 		config = function()
 			local bufferline = require("bufferline")
 			local gray = "#585b70"
-			local links = "#89dceb"
+			local links = "#454158"
 
 			bufferline.setup({
 				options = {
