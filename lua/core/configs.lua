@@ -2,6 +2,17 @@
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+-- List hidden chars
+vim.opt.listchars = {
+   tab = "→ ",
+   space = "·",
+   nbsp = "␣",
+   trail = "•",
+   eol = "↲",
+   precedes = "«",
+   extends = "»",
+}
+
 -- Mouse
 vim.opt.mouse = "a"
 vim.opt.mousefocus = true

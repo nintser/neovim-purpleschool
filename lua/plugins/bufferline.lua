@@ -14,7 +14,8 @@ return {
 					numbers = "none",
 					color_icons = false,
 					indicator = {
-						style = "none",
+						icon = '/ ',
+						style = "underline",
 					},
 					modified_icon = "●",
 					left_trunc_marker = "",
@@ -29,23 +30,35 @@ return {
 						return s
 					end,
 					always_show_bufferline = true,
+					offsets = {
+						{
+							filetype = "NvimTree",
+							text = function()
+								return vim.fn.getcwd()
+							end,
+							-- highlight = "Directory",
+							text_align = "left",
+							-- separator = true
+						}
+					}
 				},
 				highlights = {
 					background = {
-						fg = gray,
+						fg = "#22212C",
 					},
 					buffer_selected = {
-						fg = links,
+						fg = "#9580FF",
 					},
 					buffer_visible = {
-						fg = gray,
+						fg = "#9580FF",
 					},
 					separator = {
-						bg = "#1e1e2e",
-						fg = "#1e1e2e",
+						bg = "#44475a",
+						fg = "#44475a",
 					},
 					diagnostic = {},
 				},
+
 			})
 		end,
 	}
