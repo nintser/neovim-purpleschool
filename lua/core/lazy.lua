@@ -22,7 +22,10 @@ require("lazy").setup({
 		{ import = "plugins" },
 	},
 	-- automatically check for plugin updates
-	checker = { enabled = true },
+	checker = {
+		enabled = true,
+		notify = false,
+	},
 })
 
 -- resolve bug https://github.com/neovim/neovim/issues/29900#issuecomment-2345824245
